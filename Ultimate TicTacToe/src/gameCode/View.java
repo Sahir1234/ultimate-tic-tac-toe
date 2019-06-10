@@ -24,9 +24,10 @@ public class View extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	/*
-	 * Sets the dimensions of the sub squares to 80 pixels.
+	 * Sets the dimensions of the sub squares to 1/20 of the screen's height, which makes
+	 * the entire GUI fit a reasonable amount of the screen.
 	 */
-	private final static int SUB_SQUARE_SIZE = 80;
+	private final static int SUB_SQUARE_SIZE = (int) (Toolkit.getDefaultToolkit().getScreenSize().getHeight()) / 20;
 			
 	/*
 	 * Defines the border between sub squares as a tenth of the width of the sub
